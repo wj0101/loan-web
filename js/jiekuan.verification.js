@@ -283,6 +283,7 @@ $(function(){
 
         }else if(1==val2){
             $(".inputYear,.inputJobType").show();
+            $(".inputWorkYear").hide();
         }else if(2==val2){
             $(".inputYear,.inputJobType").hide();
             $(".inputWorkYear").show();
@@ -426,8 +427,8 @@ $(function(){
             if (this.value==""){
                 var error=$("<p id='termError'>请输入期限</p>");
                 $parent.append(error)
-            }else if (this.value<12|| this.value>999){
-                var error02=$("<p id='termError'>请输入12-999之间的整数</p>");
+            }else if (this.value<1|| this.value>9999){
+                var error02=$("<p id='termError'>请输入1-9999之间的整数</p>");
                 $parent.append(error02)
             }else if(!isNaN(this.value)){
                 $parent.find("#premiumError").remove();
@@ -446,8 +447,8 @@ $(function(){
             if (this.value==""){
                 var error=$("<p id='manageYearError'>请输入期限</p>");
                 $parent.append(error)
-            }else if (this.value<12|| this.value>999){
-                var error02=$("<p id='manageYearError'>请输入12-999之间的整数</p>");
+            }else if (this.value<1|| this.value>9999){
+                var error02=$("<p id='manageYearError'>请输入1-9999之间的整数</p>");
                 $parent.append(error02)
             }else if(!isNaN(this.value)){
                 $parent.find("#manageYearError").remove();
@@ -466,8 +467,8 @@ $(function(){
             if (this.value==""){
                 var error=$("<p id='workYearError'>请输入期限</p>");
                 $parent.append(error)
-            }else if (this.value<12|| this.value>999){
-                var error02=$("<p id='workYearError'>请输入12-999之间的整数</p>");
+            }else if (this.value<1|| this.value>9999){
+                var error02=$("<p id='workYearError'>请输入1-9999之间的整数</p>");
                 $parent.append(error02)
             }else if(!isNaN(this.value)){
                 $parent.find("#workYearError").remove();
@@ -486,8 +487,8 @@ $(function(){
             if (this.value==""){
                 var error=$("<p id='securityYearError'>请输入期限</p>");
                 $parent.append(error)
-            }else if (this.value<12|| this.value>999){
-                var error02=$("<p id='securityYearError'>请输入12-999之间的整数</p>");
+            }else if (this.value<1|| this.value>9999){
+                var error02=$("<p id='securityYearError'>请输入1-9999之间的整数</p>");
                 $parent.append(error02)
             }else if(!isNaN(this.value)){
                 $parent.find("#securityYearError").remove();
@@ -506,8 +507,8 @@ $(function(){
             if (this.value==""){
                 var error=$("<p id='securityNumError'>请输入基数</p>");
                 $parent.append(error)
-            }else if (this.value<12|| this.value>999){
-                var error02=$("<p id='securityNumError'>请输入12-999之间的整数</p>");
+            }else if (this.value<1|| this.value>9999){
+                var error02=$("<p id='securityNumError'>请输入1-9999之间的整数</p>");
                 $parent.append(error02)
             }else if(!isNaN(this.value)){
                 $parent.find("#securityNumError").remove();
@@ -526,8 +527,8 @@ $(function(){
             if (this.value==""){
                 var error=$("<p id='fundYearError'>请输入期限</p>");
                 $parent.append(error)
-            }else if (this.value<12|| this.value>999){
-                var error02=$("<p id='fundYearError'>请输入12-999之间的整数</p>");
+            }else if (this.value<1|| this.value>9999){
+                var error02=$("<p id='fundYearError'>请输入1-9999之间的整数</p>");
                 $parent.append(error02)
             }else if(!isNaN(this.value)){
                 $parent.find("#securityNumError").remove();
@@ -546,8 +547,8 @@ $(function(){
             if (this.value==""){
                 var error=$("<p id='fundNumError'>请输入基数</p>");
                 $parent.append(error)
-            }else if (this.value<12|| this.value>999){
-                var error02=$("<p id='fundNumError'>请输入12-999之间的整数</p>");
+            }else if (this.value<1|| this.value>9999){
+                var error02=$("<p id='fundNumError'>请输入1-9999之间的整数</p>");
                 $parent.append(error02)
             }else if(!isNaN(this.value)){
                 $parent.find("#fundNumError").remove();
@@ -594,8 +595,8 @@ $(function(){
             if (this.value==""){
                 var error=$("<p id='mortgageError'>请输入按揭总期数</p>");
                 $parent.append(error)
-            }else if (this.value<12|| this.value>999){
-                var error02=$("<p id='mortgageError'>请输入12-999之间的整数</p>");
+            }else if (this.value<1|| this.value>9999){
+                var error02=$("<p id='mortgageError'>请输入1-9999之间的整数</p>");
                 $parent.append(error02)
             }else if(!isNaN(this.value)){
                 $parent.find("#mortgageError").remove();
@@ -614,8 +615,8 @@ $(function(){
             if (this.value==""){
                 var error=$("<p id='repaymentError'>请输入已还款期数</p>");
                 $parent.append(error)
-            }else if (this.value<12|| this.value>999){
-                var error02=$("<p id='repaymentError'>请输入12-999之间的整数</p>");
+            }else if (this.value<1|| this.value>9999){
+                var error02=$("<p id='repaymentError'>请输入1-9999之间的整数</p>");
                 $parent.append(error02)
             }else if(!isNaN(this.value)){
                 $parent.find("#repaymentError").remove();
@@ -634,8 +635,8 @@ $(function(){
             if (this.value==""){
                 var error=$("<p id='insurancePolicyError'>请输入发放间隔</p>");
                 $parent.append(error)
-            }else if (this.value<12|| this.value>999){
-                var error02=$("<p id='insurancePolicyError'>请输入12-999之间的整数</p>");
+            }else if (this.value<1|| this.value>9999){
+                var error02=$("<p id='insurancePolicyError'>请输入1-9999之间的整数</p>");
                 $parent.append(error02)
             }else if(!isNaN(this.value)){
                 $parent.find("#insurancePolicyError").remove();
@@ -654,8 +655,8 @@ $(function(){
             if (this.value==""){
                 var error=$("<p id='repaymentsError'>请输入还款月供</p>");
                 $parent.append(error)
-            }else if (this.value<12|| this.value>999){
-                var error02=$("<p id='repaymentsError'>请输入12-999之间的整数</p>");
+            }else if (this.value<1|| this.value>9999){
+                var error02=$("<p id='repaymentsError'>请输入1-9999之间的整数</p>");
                 $parent.append(error02)
             }else if(!isNaN(this.value)){
                 $parent.find("#repaymentsError").remove();
@@ -702,8 +703,8 @@ $(function(){
             if (this.value==""){
                 var error=$("<p id='alreadyRepayError'>请输入已还款期限</p>");
                 $parent.append(error)
-            }else if (this.value<12|| this.value>999){
-                var error02=$("<p id='alreadyRepayError'>请输入12-999之间的整数</p>");
+            }else if (this.value<1|| this.value>9999){
+                var error02=$("<p id='alreadyRepayError'>请输入1-9999之间的整数</p>");
                 $parent.append(error02)
             }else if(!isNaN(this.value)){
                 $parent.find("#alreadyRepayError").remove();
@@ -722,8 +723,8 @@ $(function(){
             if (this.value==""){
                 var error=$("<p id='cardInstallError'>请输入分期期限</p>");
                 $parent.append(error)
-            }else if (this.value<12|| this.value>999){
-                var error02=$("<p id='cardInstallError'>请输入12-999之间的整数</p>");
+            }else if (this.value<1|| this.value>9999){
+                var error02=$("<p id='cardInstallError'>请输入1-9999之间的整数</p>");
                 $parent.append(error02)
             }else if(!isNaN(this.value)){
                 $parent.find("#cardInstallError").remove();
@@ -742,8 +743,8 @@ $(function(){
             if (this.value==""){
                 var error=$("<p id='repayPeriodError'>请输入已还款期限</p>");
                 $parent.append(error)
-            }else if (this.value<12|| this.value>999){
-                var error02=$("<p id='repayPeriodError'>请输入12-999之间的整数</p>");
+            }else if (this.value<1|| this.value>9999){
+                var error02=$("<p id='repayPeriodError'>请输入1-9999之间的整数</p>");
                 $parent.append(error02)
             }else if(!isNaN(this.value)){
                 $parent.find("#repayPeriodError").remove();
